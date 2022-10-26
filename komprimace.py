@@ -1,6 +1,8 @@
 import os
 import gzip
 import shutil
+#TODO vytvorit slozku, kam se budou ukladat .gz
+# doplnit readme
 
 #Declare a path to log files
 path = "var/log/"
@@ -19,3 +21,4 @@ for i in files:
         f_compressed.close()
         #remove non-compressed files
         os.remove(path + i)
+        
