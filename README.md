@@ -13,9 +13,14 @@ V root adresáři vytvoříme crontab s příkazem: 0 0 1 * * /usr/bin/python3 /
     * že skript zkomprimuje .log soubor do požadovaného formátu a nezkomprimovaný soubor smaže
     * bude ignorovat již existující gzip soubory
     * bude ignorovat složky
+* Ve skriptu odkomentujeme na řádky 13, 55 a 58
 * V root adresáři, kde je umístěný samotný skript komprimace.py spustíme příkaz: python3 komprimace.py
 * Výsledkem bude složka /var/log, obsahovat
     * test_log.log.gz
     * test_log_a.log.gz
     * složku dir_test
+* Dostaneme hlášku "Total of 1 files were compressed"
+
+* Stejným postupem můžeme nahrát například 20 nezkomprimovaných souborů a 10 zkomprimovaných souborů ve formátu gzip.
+* Hláška by v tomto případě měla správně vypadat takto: "Total of 20 files were compressed"
 
