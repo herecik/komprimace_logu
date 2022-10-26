@@ -1,4 +1,4 @@
-# komprimace_logu
+# Skript komprimace.py
 Skript, který komprimuje log soubory do gzip souborů za účelem ušetření místa.<br> 
 Skript bude spouštěn jako linuxový cron job každých 30 dní. <br>
 Původní, nezkomprimované soubory budou smazány, tedy v určeném adresáři zůstanou pouze gzip soubory.
