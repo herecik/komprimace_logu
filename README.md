@@ -10,7 +10,7 @@ V root adresáři vytvoříme crontab s příkazem: 0 0 1 * * /usr/bin/python3 /
 # Testy
 * Do cílové složky /var/log nahrajeme/vytvoříme soubory např. test_log.log, test_log_a.log.gz a vytvoříme zde složku dir_test.
 * Tímto ověříme
-    * že skript zkomprimuje .log soubor do požadovaného formátu a   ezkomprimovaný soubor smaže
+    * že skript zkomprimuje .log soubor do požadovaného formátu a nezkomprimovaný soubor smaže
     * bude ignorovat již existující gzip soubory
     * bude ignorovat složky
 * V root adresáři, kde je umístěný samotný skript komprimace.py spustíme příkaz: python3 komprimace.py
