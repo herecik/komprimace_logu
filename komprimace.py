@@ -9,6 +9,9 @@ GZIP_NUMBER = b'\x1f\x8b'
 #Load contents of log direcotory
 files = os.listdir(PATH)
 
+#counter used for debugging. Uncomment to use 
+#cnt = 0
+
 def is_gzip(file_name):
     """ 
     Function that checks if a file is already gzipped
@@ -48,4 +51,8 @@ for i in files:
         
         #remove non-compressed files
         os.remove(file_path)
-
+        #Uncomment cnt to use for debugging
+        #cnt += 1
+        
+#Message for debugging, counting files that have been compressed. Uncomment to use  
+#print("Debug: Total of " + str(cnt) + " files were compressed")
